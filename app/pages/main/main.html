@@ -1,0 +1,15 @@
+<!--<Page xmlns="http://schemas.nativescript.org/tns.xsd">-->
+    <GridLayout rows="auto, *" xmlns="http://schemas.nativescript.org/tns.xsd">
+        <StackLayout row="0">
+            <Button text="Listar WiFi" (tap)="listWifi()"></Button>
+        </StackLayout>
+        <ListView [items]="wifiList" row="1">
+            <template let-item="item">
+                <StackLayout class="medium-spacing">
+                    <Label [text]="item.ssid"></Label>
+                </StackLayout>
+            </template>
+        </ListView>
+
+    </GridLayout>
+<!--</Page>-->
